@@ -1,0 +1,75 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td.ja {
+  background-color: #b9e6b3;
+}
+
+td.nein {
+  background-color: #eb1313;
+}
+
+td.vielleicht {
+  background-color: #dd901b;
+}
+
+td.clear {
+  background-color: #f9f8f6;
+}
+
+@media only screen and (max-width: 600px) {
+  th, td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+
+.caption {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Text einrücken*/
+h3 {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
